@@ -13,22 +13,32 @@
       box-sizing: border-box;
     }
 
+
+    /* Global Styles */
     body {
       font-family: 'Poppins', sans-serif;
-      background: #fafafa;
+      background: linear-gradient(to bottom, #111, #f1c40f);
       color: #333;
-      line-height: 1.6;
+        margin: auto;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+        line-height: 1.6;
+        font-family: 'Poppins', sans-serif;
     }
 
+    /* Navigation Menu */
     .menu {
       background: #111;
       padding: 18px 40px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.3);
       position: sticky;
+      margin:auto;
       top: 0;
       z-index: 1000;
     }
 
+    /* Navigation Menu Container */
     .menu-container {
       max-width: 1300px;
       margin: auto;
@@ -37,6 +47,7 @@
       justify-content: space-between;
     }
 
+    /* Logo */
     .menulogo {
       font-size: 26px;
       font-weight: 700;
@@ -45,29 +56,57 @@
       letter-spacing: 1px;
     }
 
+    /* Menu List */
     .menu-list {
       list-style: none;
       display: flex;
       gap: 28px;
     }
 
+    /* Menu List Items */
     .menu-list li a {
       color: #fff;
       font-weight: 500;
       text-decoration: none;
       font-size: 15px;
       transition: 0.3s;
+
     }
 
+    /* Hover Effect for Menu Items */
     .menu-list li a:hover {
       color: #f1c40f;
+      transform: scale(1.1);
+      transition: transform 0.3s;
+      transform: scale(1.1);
+      text-decoration: underline;
+      text-decoration-color: #f1c40f;
+      text-decoration-thickness: 2px;
+      text-decoration-style: solid;
+      text-decoration-line: underline;
+      text-underline-offset: 6px;
     }
 
+    .menu-list li a:active {
+      color: #f1c40f;
+      transform: scale(1.1);
+      transition: transform 0.3s;
+      transform: scale(1.1);
+      text-decoration: underline;
+      text-decoration-color: #f1c40f;
+      text-decoration-thickness: 2px;
+      text-decoration-style: solid;
+      text-decoration-line: underline;
+      text-underline-offset: 6px;
+    }
+
+    /* Menu Actions (Sign In/Sign Up) */
     .menu-actions {
       display: flex;
       gap: 15px;
     }
 
+    /* Buttons */
     .btn {
       padding: 10px 22px;
       border-radius: 30px;
@@ -77,6 +116,7 @@
       transition: 0.3s;
     }
 
+    /* Sign In Button */
     .signin {
       border: 2px solid #f1c40f;
       color: #f1c40f;
@@ -87,6 +127,7 @@
       color: #111;
     }
 
+    /* Sign Up Button */
     .signup {
       background: #f1c40f;
       color: #111;
@@ -98,6 +139,7 @@
       color: #f1c40f;
     }
 
+    /* Hero Section */
     .hero {
       display: flex;
       align-items: center;
@@ -115,13 +157,18 @@
     .hero-heading {
       font-size: 52px;
       font-weight: 700;
-      color: #111;
-      margin-bottom: 20px;
+      color: #f1c40f;
+      
     }
 
     .hero-para {
       font-size: 20px;
-      color: #555;
+      color: #fff;
+      margin-bottom: 65px;
+    }
+
+    .hero-para strong {
+      color: #f1c40f;
       margin-bottom: 25px;
     }
 
@@ -129,26 +176,52 @@
       padding: 14px 30px;
       border-radius: 30px;
       background: linear-gradient(135deg,#f1c40f,#ff7802);
-      border: none;
+      border:#111 solid 2px;
       color: #111;
       font-size: 16px;
       font-weight: 600;
       cursor: pointer;
       text-decoration: none;
-      transition: 0.3s;
+      transform: scale(1);
+      transition: transform 0.3s;
     }
 
     .hero-btn:hover {
       background: #111;
       color: #f1c40f;
+      border: #f1c40f solid 2px;
+      transform: scale(1);
+      transition: transform 0.3s;
+      transform: scale(1.1);
+    }
+
+    .car-images {
+      flex: 1;
+      text-align: center;
+    }
+
+    hr{
+      border: 2px solid #f1c40f;
+      height: 1px;
+      background: #f1c40f;
+      margin-right: 40px;
+      margin-left: 80px;
+      width: 90%;
     }
 
     .car-images img {
       max-width: 100%;
       border-radius: 20px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      box-shadow: 0 8px 20px #f1c40f;
+      transform: scale(1);
+      transition: transform 0.3s;
     }
 
+    .car-images img:hover {
+      transform: scale(1.1);
+    }
+
+    /* Features Section */
     .features {
       display: flex;
       justify-content: center;
@@ -166,7 +239,7 @@
       padding: 30px 20px;
       background: #fff;
       border-radius: 18px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      box-shadow: 0 4px 15px #f1c40f;
       transition: transform 0.3s;
     }
 
@@ -180,10 +253,18 @@
       color: #111;
     }
 
+      /* Brands Section */
     .brands {
       text-align: center;
       padding: 60px 20px;
-      background: #fff;
+      background: #fff; 
+      transform: scale(1);
+      transition: transform 0.3s;
+      margin-top: 70px;
+      border-radius: 20px 20px 0px 0px;
+      transition: transform 0.3s;
+      transform: scale(1);
+      transition: transform 0.3s;
     }
 
     .brands h2 {
@@ -209,6 +290,23 @@
       height: 60px;
       object-fit: contain;
       margin-bottom: 10px;
+      transform: scale(1);
+      transition: transform 0.3s;
+    }
+
+    .brand img:hover {
+      transform: scale(1.1);
+    }
+
+    .brand p {
+      font-size: 14px;
+      color: #000000;
+      transform: scale(1);
+      transition: transform 0.3s;
+    }
+
+    .brand p:hover {
+      transform: scale(1.1);
     }
 
     .services {
@@ -217,10 +315,18 @@
       background: #fdfdfd;
     }
 
-    .services h2 {
-      font-size: 28px;
-      margin-bottom: 15px;
-      color: #111;
+    /* Services Section */
+
+    .services {
+      text-align: center;
+      border: solid 0px 0px 20px 20px #111;
+      border-radius: 0px 0px 20px 20px;
+    }
+
+
+    .service-container {
+      max-width: 1200px;
+      margin: auto;
     }
 
     .service-list {
@@ -228,7 +334,7 @@
       justify-content: center;
       gap: 30px;
       flex-wrap: wrap;
-      margin-top: 30px;
+      margin-top: 30px; 
     }
 
     .service {
@@ -238,10 +344,22 @@
       border-radius: 18px;
       box-shadow: 0 4px 15px rgba(0,0,0,0.08);
       transition: 0.3s;
+      box-shadow: 0 4px 15px #f1c40f;
     }
 
     .service:hover {
       transform: translateY(-6px);
+    }
+
+    .services h2 {
+      font-size: 28px;
+      margin-bottom: 15px;
+      color: #111;
+    }
+    .services p {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 40px;
     }
 
     .service h3 {
@@ -250,6 +368,7 @@
       color: #111;
     }
 
+    /* New Arrivals Section */
     .new-arrivals {
       display: flex;
       align-items: center;
@@ -257,7 +376,12 @@
       gap: 50px;
       flex-wrap: wrap;
       padding: 80px 20px;
-      background: #fff;
+      background: linear-gradient(to bottom, #111, #f1c40f);
+      max-width: 1200px;
+      margin: 70px auto;
+      border: #111 solid 2px;
+      border-radius: 20px;
+      transition: transform 0.3s
     }
 
     .new-arrivals img {
@@ -265,25 +389,35 @@
       height: 260px;
       object-fit: cover;
       border-radius: 20px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      transition: transform 0.3s;
     }
+
+    .new-arrivals img:hover {
+      transform: scale(1.1);
+    }
+
+  
 
     .arrival_content h3 {
       font-size: 26px;
       margin-bottom: 15px;
+      color: #fff;
     }
 
 
     .arrival_content p {
       font-size: 16px;
-      color: #555;
+      color: #fff;
       margin-bottom: 25px;
     }
 
+    /* Reviews Section */
     .reviews {
       text-align: center;
       padding: 70px 20px;
       background: #fdfdfd;
+      font-size: 25px;
     }
 
     .review-list {
@@ -332,6 +466,7 @@
       color: #f1c40f;
     }
 
+    /* Footer Section */
     .footer {
       background: #111;
       color: #ddd;
@@ -427,7 +562,7 @@
   </style>
 </head>
 <body>
-  <nav class="menu">
+    <nav class="menu">
     <div class="menu-container">
       <a class="menulogo" href="#">CarMov</a>
       <ul class="menu-list">
@@ -451,10 +586,13 @@
       <p class="hero-para">Explore our wide range of vehicles and drive away in style.</p>
       <a href="#" class="hero-btn">Explore Now</a>
     </div>
+    
     <div class="car-images">
       <img src="car1.png" alt="Car 1">
     </div>
   </section>
+
+  <hr>
 
   <section class="features">
     <div class="feature">
@@ -486,12 +624,14 @@
   </section>
 
   <section class="services">
+    <div class="service-container">
     <h2>Our Services</h2>
     <p>We provide the best services for you and the most reliable benefits with <strong>CarMov</strong>.</p>
     <div class="service-list">
       <div class="service"><h3>Buy and Sell Car</h3><p>Flexible buying options to suit your budget.</p></div>
       <div class="service"><h3>Easy Payment</h3><p>Multiple financing options available.</p></div>
       <div class="service"><h3>Easy to Use</h3><p>User-friendly platform for a seamless experience.</p></div>
+    </div>
     </div>
   </section>
 
